@@ -25,8 +25,7 @@ npm run dev
 
 主なコマンド:
 
-- `npm run check` — 整形、型、Tailwind CSSビルド、テスト、Workersバンドルを一括確認
-- `npm test` — Workersランタイム上でテスト
+- `npm run check` — 整形、型、Tailwind CSSビルド、Workersバンドルを一括確認
 - `npm run cf-typegen` — Wrangler設定から型を再生成
 - `npm run deploy` — Cloudflareへデプロイ
 

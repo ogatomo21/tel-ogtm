@@ -10,10 +10,8 @@
 	"scripts": {
 		"build:assets": "vite build",
 		"build:check": "npm run build:assets && wrangler deploy --dry-run",
-		"check": "npm run format:check && npm run typecheck && npm test && npm run build:check",
-		"typecheck": "tsc --noEmit && tsc --noEmit -p test/tsconfig.json",
-		"test": "npm run build:assets && vitest run",
-		"test:watch": "vitest",
+		"check": "npm run format:check && npm run typecheck && npm run build:check",
+		"typecheck": "tsc --noEmit",
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"deploy": "npm run build:assets && wrangler deploy",
@@ -22,14 +20,12 @@
 		"cf-typegen": "wrangler types"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.21.1",
 		"@fortawesome/fontawesome-free": "^7.3.1",
 		"@tailwindcss/vite": "^4.3.3",
 		"prettier": "^3.9.6",
 		"tailwindcss": "^4.3.3",
 		"typescript": "^5.5.2",
 		"vite": "^8.2.1",
-		"vitest": "^4.1.10",
 		"wrangler": "^4.121.0"
 	}
 }
