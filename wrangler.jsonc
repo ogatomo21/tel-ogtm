@@ -11,6 +11,9 @@
 		"enabled": true,
 	},
 	"upload_source_maps": true,
+	"build": {
+		"command": "npm run build:assets",
+	},
 	"assets": {
 		"binding": "ASSETS",
 		"directory": "./dist",
