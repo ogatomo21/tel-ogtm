@@ -1,5 +1,9 @@
 # Logs
 
+# Local Wrangler development diagnostics
+.wrangler-dev.log
+.wrangler-dev.err
+
 logs
 _.log
 npm-debug.log_
